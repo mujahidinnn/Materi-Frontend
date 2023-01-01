@@ -30,8 +30,8 @@ const Home = () => {
         <img
           src={logoProgrammer}
           alt="logo-pondok-programmer"
-          width={300}
-          height={300}
+          
+          
           className="img"
         />
         <p style={{ color: "red" }}>{errMsg}</p>

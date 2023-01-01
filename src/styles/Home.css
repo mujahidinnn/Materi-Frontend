@@ -18,6 +18,8 @@
 img.img {
   display: flex;
   margin: 0 auto;
+  width: 300px;
+  height: 300px;
 }
 form {
   display: flex;
@@ -45,4 +47,19 @@ button {
   border: none;
   cursor: pointer;
   font-weight: 500;
+}
+
+@media screen and (max-width: 428px) {
+  .wrap-form {
+    margin-top: 12%;
+    width: 300px;
+    padding: 20px 10px;
+  }
+  img.img {
+    width: 200px;
+    height: 200px;
+  }
+  form{
+    gap:1rem;
+  }
 }
