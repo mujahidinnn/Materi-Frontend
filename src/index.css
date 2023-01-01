@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(3, 142, 119) 0%,
+    rgb(72, 177, 191) 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgb(3, 142, 119) 0%,
+    rgb(72, 177, 191) 100%
+  );
+  color:#ffffff;
+}
