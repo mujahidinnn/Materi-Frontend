@@ -14,7 +14,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username === "frontend" && password === "frontend") {
+    if (username === "frontend" && password === "admin") {
       window.sessionStorage.setItem("token", token);
       navigate("/dashboard");
       setToken("qwertytokenfrontend");
