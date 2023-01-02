@@ -1,0 +1,50 @@
+.modalBg {
+  width: 99vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalCont {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.title h3 {
+  color: black;
+  text-align: center;
+}
+.body p {
+  color: black;
+  text-align: center;
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-cancel {
+  background-color: rgb(251, 50, 50);
+  padding: 3px 7px;
+  border-radius: 6px;
+  color: white;
+}
+
+.btn-logout {
+  background-color: rgb(50, 107, 251);
+  padding: 3px 7px;
+  border-radius: 6px;
+  color: white;
+}

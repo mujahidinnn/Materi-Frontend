@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Dashboard.css";
-import iconLogout from "../assets/logout.svg";
+import ModalLogout from "../components/ModalLogout";
 
 // data
 import DataCss from "../data/DataCss";
@@ -14,26 +14,15 @@ const Dashboard = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!window.sessionStorage.getItem("token")) {
-      navigate("/")
+      navigate("/");
     }
   }, []);
-
-  const handleLogout = () => {
-    window.sessionStorage.clear();
-    navigate("/");
-  };
 
   return (
     <div className="container-dashboard">
       <div className="wrap-head">
         <div />
-        <img
-          src={iconLogout}
-          alt=""
-          title="logout"
-          className="icon-logout"
-          onClick={handleLogout}
-        />
+        <ModalLogout />
       </div>
       <div className="wrap html">
         <h2>Mukaddimah</h2>

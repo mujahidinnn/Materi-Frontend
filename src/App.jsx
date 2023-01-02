@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Dashboard, NotFound } from "./pages";
+import { Dashboard, Home, NotFound } from "./pages";
 
 export default function App() {
   return (
     <div>
+      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

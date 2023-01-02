@@ -30,8 +30,6 @@ const Home = () => {
         <img
           src={logoProgrammer}
           alt="logo-pondok-programmer"
-          
-          
           className="img"
         />
         <p style={{ color: "red" }}>{errMsg}</p>
@@ -66,7 +64,9 @@ const Home = () => {
                 <p onClick={() => setVisible(!visible)}>Show</p>
               )}
             </div>
-            <button onClick={handleSubmit}>Sign In</button>
+            <button className="btn-login" onClick={handleSubmit}>
+              Sign In
+            </button>
           </div>
         </form>
       </div>

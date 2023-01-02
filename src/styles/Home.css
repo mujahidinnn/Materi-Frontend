@@ -38,7 +38,7 @@ input {
   background: #e8f0fe;
 }
 
-button {
+button.btn-login {
   padding: 10px 20px;
   border-radius: 8px;
   background: #020c07;
