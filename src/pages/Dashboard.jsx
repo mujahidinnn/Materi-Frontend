@@ -7,6 +7,7 @@ import ModalLogout from "../components/ModalLogout";
 import DataCss from "../data/DataCss";
 import DataHtml from "../data/DataHtml";
 import DataIntro from "../data/DataIntro";
+import DataDasar from "../data/DataDasar";
 // import DataJavascript from "../data/DataJavascript";
 // import DataReactjs from "../data/DataReactJs";
 
@@ -29,6 +30,33 @@ const Dashboard = () => {
         <p>mengenal apa itu Frontend dan Frontend Web Developer</p>
         <div className="wrap-cards">
           {DataIntro.map((data, id) => {
+            return (
+              <div className="wrap-pdf" key={id}>
+                <img src={data.pict} alt={data.name} className="img-pdf" />
+                <div className="wrap-btn">
+                  <a href={data.pdf} download title="download now">
+                    Download
+                  </a>
+                  <a
+                    href={data.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="open now"
+                  >
+                    Open
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <hr />
+      <div className="wrap html">
+        <h2>Pemograman Dasar</h2>
+        <p>mengenal dasar-dasar pemograman</p>
+        <div className="wrap-cards">
+          {DataDasar.map((data, id) => {
             return (
               <div className="wrap-pdf" key={id}>
                 <img src={data.pict} alt={data.name} className="img-pdf" />
