@@ -2,17 +2,21 @@
   background: rgba(0, 0, 0, 0.25);
   padding: 20px;
 }
-.wrap-head{
-  display:flex;
+.wrap-head {
+  display: flex;
   justify-content: space-between;
 }
-.icon-logout:hover{
+.icon-logout:hover {
   cursor: pointer;
 }
 
 img.img-pdf {
   box-sizing: border-box;
   width: 100%;
+  transition: .3s;
+}
+img.img-pdf:hover{
+filter: brightness(80%);
 }
 p {
   max-width: 600px;
@@ -20,39 +24,22 @@ p {
 
 .wrap-cards {
   display: grid;
-  grid-gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
 .wrap-pdf {
-  max-width: 250px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
+  justify-content:center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.12);
   gap: 5px;
-}
-.wrap-btn {
-  display: flex;
-  gap: 5em;
-  padding: 10px 0;
-}
-
-a {
-  border-radius: 6px;
-  padding: 3px 6px;
-  text-decoration: none;
-  color: rgb(3, 142, 119);
-  color: #fcfcfc;
-}
-
-a:hover {
-  background-color: rgba(225, 225, 225, 0.15);
 }
 
 /*  */
 .wrap-pdf-empty {
-  max-width: 250px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,17 +47,20 @@ a:hover {
   gap: 5px;
 }
 
-.img-empty{
-  height: 200px;
+.img-empty {
+  height: 180px;
   width: 100%;
-  background-color: rgba(225, 225, 225, 0.25); 
+  background-color: rgba(225, 225, 225, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn-empty{
-  background-color: rgba(225, 225, 225, 0.15);
-  width: 60px;
-  height: 20px;
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 12px;
 }

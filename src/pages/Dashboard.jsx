@@ -32,20 +32,9 @@ const Dashboard = () => {
           {DataIntro.map((data, id) => {
             return (
               <div className="wrap-pdf" key={id}>
-                <img src={data.pict} alt={data.name} className="img-pdf" />
-                <div className="wrap-btn">
-                  <a href={data.pdf} download title="download now">
-                    Download
-                  </a>
-                  <a
-                    href={data.pdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="open now"
-                  >
-                    Open
-                  </a>
-                </div>
+                <a href={data.link} target="_blank" rel="noopener noreferrer">
+                  <img src={data.pict} alt={data.name} className="img-pdf" />
+                </a>
               </div>
             );
           })}
@@ -59,20 +48,9 @@ const Dashboard = () => {
           {DataDasar.map((data, id) => {
             return (
               <div className="wrap-pdf" key={id}>
-                <img src={data.pict} alt={data.name} className="img-pdf" />
-                <div className="wrap-btn">
-                  <a href={data.pdf} download title="download now">
-                    Download
-                  </a>
-                  <a
-                    href={data.pdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="open now"
-                  >
-                    Open
-                  </a>
-                </div>
+                <a href={data.link} target="_blank" rel="noopener noreferrer">
+                  <img src={data.pict} alt={data.name} className="img-pdf" />
+                </a>
               </div>
             );
           })}
@@ -90,20 +68,9 @@ const Dashboard = () => {
           {DataHtml.map((data, id) => {
             return (
               <div className="wrap-pdf" key={id}>
-                <img src={data.pict} alt={data.name} className="img-pdf" />
-                <div className="wrap-btn">
-                  <a href={data.pdf} download title="download now">
-                    Download
-                  </a>
-                  <a
-                    href={data.pdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="open now"
-                  >
-                    Open
-                  </a>
-                </div>
+                <a href={data.link} target="_blank" rel="noopener noreferrer">
+                  <img src={data.pict} alt={data.name} className="img-pdf" />
+                </a>
               </div>
             );
           })}
@@ -124,20 +91,9 @@ const Dashboard = () => {
           {DataCss.map((data, id) => {
             return (
               <div className="wrap-pdf" key={id}>
-                <img src={data.pict} alt={data.name} className="img-pdf" />
-                <div className="wrap-btn">
-                  <a href={data.pdf} download title="download now">
-                    Download
-                  </a>
-                  <a
-                    href={data.pdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="open now"
-                  >
-                    Open
-                  </a>
-                </div>
+                <a href={data.link} target="_blank" rel="noopener noreferrer">
+                  <img src={data.pict} alt={data.name} className="img-pdf" />
+                </a>
               </div>
             );
           })}
@@ -156,15 +112,11 @@ const Dashboard = () => {
 
         <div className="wrap-pdf-empty">
           <div className="img-empty">On Progress ...</div>
-          <div className="wrap-btn">
-            <a href="" className="btn-empty"></a>
-            <a href="" className="btn-empty"></a>
-          </div>
         </div>
       </div>
       <hr />
       <div className="wrap reactjs">
-        <h2>REACT JS</h2>
+        <h2>React JS</h2>
         <p>
           adalah libray JavaScript yang digunakan untuk membangun user interface
           yang interaktif berbasis component. React yang dibuat oleh Facebook
@@ -175,10 +127,6 @@ const Dashboard = () => {
 
         <div className="wrap-pdf-empty">
           <div className="img-empty">On Progress ...</div>
-          <div className="wrap-btn">
-            <a href="" className="btn-empty"></a>
-            <a href="" className="btn-empty"></a>
-          </div>
         </div>
       </div>
     </div>

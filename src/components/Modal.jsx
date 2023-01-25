@@ -10,7 +10,7 @@ const Modal = ({ closeModal }) => {
   };
 
   return (
-    <div className="modalBg">
+    <div className="modalBg" onClick={() => closeModal(false)}>
       <div className="modalCont">
         <div className="title">
           <h3>Logout</h3>
