@@ -8,7 +8,7 @@ import DataCss from "../data/DataCss";
 import DataHtml from "../data/DataHtml";
 import DataIntro from "../data/DataIntro";
 import DataDasar from "../data/DataDasar";
-// import DataJavascript from "../data/DataJavascript";
+import DataJavascript from "../data/DataJavascript";
 // import DataReactjs from "../data/DataReactJs";
 
 const Dashboard = () => {
@@ -110,8 +110,16 @@ const Dashboard = () => {
           menggunakan tag script.
         </p>
 
-        <div className="wrap-pdf-empty">
-          <div className="img-empty">On Progress ...</div>
+        <div className="wrap-cards">
+          {DataJavascript.map((data, id) => {
+            return (
+              <div className="wrap-pdf" key={id}>
+                <a href={data.link} target="_blank" rel="noopener noreferrer">
+                  <img src={data.pict} alt={data.name} className="img-pdf" />
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
       <hr />
