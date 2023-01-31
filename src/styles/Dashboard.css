@@ -29,7 +29,8 @@ p {
 }
 
 .wrap-pdf {
-  max-width: 340px;
+  box-sizing:border-box;
+  max-width: 334px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -63,4 +64,10 @@ p {
 ::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 12px;
+}
+
+@media screen and (max-width:400px){
+  .container-dashboard{
+    padding: 5px;
+  }
 }
