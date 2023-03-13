@@ -15,7 +15,7 @@
   width: 300px;
   height: 200px;
   border-radius: 8px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.894);
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   display: flex;
   flex-direction: column;
@@ -37,14 +37,14 @@
   justify-content: space-around;
 }
 .btn-cancel {
-  background-color: rgb(251, 50, 50);
+  background-color: rgba(251, 50, 50, 0.88);
   padding: 3px 7px;
   border-radius: 6px;
   color: white;
 }
 
 .btn-logout {
-  background-color: rgb(0, 167, 11);
+  background-color: rgba(0, 167, 11, 0.883);
   padding: 3px 7px;
   border-radius: 6px;
   color: white;
