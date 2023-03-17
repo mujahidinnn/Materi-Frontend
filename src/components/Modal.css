@@ -1,5 +1,5 @@
 .modalBg {
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -9,6 +9,18 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+  animation: zoom-out 0.3s ease-in-out;
+}
+
+@keyframes zoom-out {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 .modalCont {
