@@ -14,10 +14,10 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username === import.meta.env.VITE_APP_USN && password === import.meta.env.VITE_APP_PWD) {
+    if (username === "frontend" && password === "admin") {
       window.sessionStorage.setItem("token", token);
       navigate("/dashboard");
-      setToken(import.meta.env.VITE_APP_TOKEN);
+      setToken(token);
     } else {
       setErrMsg("Kasalahan pada username atau password :(");
       return false;
